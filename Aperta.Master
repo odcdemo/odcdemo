@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Aperta.master.cs" Inherits="LaunchPad.Aperta" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Launchpad</title>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
+    <link href="./content/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css" />
+    <link href="./content/Aperta.css" rel="stylesheet" type="text/css" />
+    <link href="./content/LauchPad.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function CloseTabs() {
+        for (i = 0; i < $PreviousTab.length; i++)
+        { $PreviousTab[i].close(); }
+        }
+        </script>
+
+    <asp:ContentPlaceHolder ID="CPHApertaMasterHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FrmApertaMaster" runat="server">
+    <div class="ApertaMaster_Wrapper"> 
+        <div class="ApertaMaster_HeaderDIV">
+            <asp:Image ID="ImgApertaMasterLogo" runat="server" AlternateText="Cannot load Logo" CssClass="ApertaMaster_Logo" ImageUrl="./Images/LogoSmall.gif" />
+            <asp:Label ID="LblApertaMasterHeading" CssClass="ApertaMaster_Header" runat="server" Text=" "></asp:Label>
+            <div class="ApertaMaster_HeaderUtils">
+                <div class="ApertaMaster_MPUtility"><asp:LinkButton ID="ApertaMasterLogoff" CssClass="ApertaMaster_HeaderMenuOpt" Visible="false" 
+                    runat="server" OnClientClick="CloseTabs()"  OnClick="ApertaMasterLogoff_Click" >[Logoff]</asp:LinkButton>
+                </div>
+                <div class="ApertaMaster_MPUtility">
+                <asp:LinkButton
+                    ID="ApertaMasterChgPwd" CssClass="ApertaMaster_HeaderMenuOpt" runat="server" Visible="false" 
+                    onclick="ApertaMasterChgPwd_Click">[Change Password]</asp:LinkButton>
+                </div>
+                <div class="ApertaMaster_MPUtility">
+                    <span id="spanApertaMasterPreferencesBtn">
+                        <asp:LinkButton ID="ApertaMasterPreferencesBtn" CssClass="ApertaMaster_HeaderMenuOpt" runat="server" Visible="false" >[Preferences]</asp:LinkButton>
+                    </span>
+                </div>
+                <div class="ApertaMaster_MPUtility">
+                 <span id="spanApertaMasterUserName">
+                    <asp:Label ID="ApertaMasterUserName" CssClass="ApertaMaster_HeaderMenuOpt" runat="server" Text="" Visible="false" ></asp:Label>
+                 </span>
+                </div>
+            </div>
+	    </div>
+        <div class="ApertaMaster_Padding">
+	    </div>
+        <div class="ApertaMaster_MainDIV" runat="server" id="ApertaMaster_MainDIV">
+        <asp:ContentPlaceHolder ID="CPHApertaMasterBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ 	    </div>
+        <div class="ApertaMaster_FooterDIV">
+                <p>Copyright &copy; <%: DateTime.Now.Year %> <a href="mailto:support@aperta.com"><span class="ApertaMaster_Highlight">Aperta Ltd.</span></a> All rights reserved.</p>
+ 	    </div>
+   </div>
+    </form>
+</body>
+</html>

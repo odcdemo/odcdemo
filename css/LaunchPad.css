@@ -1,0 +1,1124 @@
+﻿/*body
+{
+    background-color:white;
+    color: black;
+    padding:0;
+    /*margin:0 auto;*/
+    /*font-family:Helvetica, Arial,  Verdana, sans-serif;
+    font-size:9pt;
+    font-weight:normal;
+    /*overflow:hidden;*/
+/*}*/
+
+.form1
+{
+	height: 100%;
+}
+
+#PasswordHyper
+{
+    background-color:transparent;
+    border-style:none;
+}
+
+.ApertaLabel {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    /*background-color: #1ba1e2;*/
+    width: 100%;
+    border-style: none;
+    border-color: white;
+    border-width: 2px;
+    box-sizing: content-box;
+}
+
+.ApertaLabelSmall {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    border-style: none;
+    border-color: white;
+    border-width: 2px;
+    box-sizing: content-box;
+}
+
+.ApertaLabelMedium {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    border-style: none;
+    border-color: white;
+    border-width: 2px;
+    box-sizing: content-box;
+}
+
+.MenuItems{
+    font-size: 15px;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+    .MenuItems:hover {
+        background-color: #999999;
+        border-radius: 10px;
+    }
+
+/* This unordered list is for the menu option in the header */
+ul.MenuItemDropDown {
+    list-style: none;
+}
+
+    ul.MenuItemDropDown li {
+        z-index: 100;
+        margin: 0 2px;
+        color: white;
+        position: relative;
+    }
+    /* submenu, it's hidden by default */
+    ul.MenuItemDropDown ul {
+        position: absolute;
+        left: -22px;
+        top: 18px;
+        display: none;
+        margin: 0 0 0 -1px;
+        padding: 0;
+        list-style: none;
+    }
+
+        ul.MenuItemDropDown ul li {
+            width: 140px;
+            height: 22px;
+            background-color: #999999;
+            border-bottom: 1px solid silver;
+            color: #666;
+            margin-right: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+            ul.MenuItemDropDown ul li:hover {
+                color: #fff;
+            }
+
+
+
+html, body {
+
+	
+	margin:0 auto;
+	background-color:#444444;
+    color: black;
+    padding:0;
+    /*margin:0 auto;*/
+    font-family:Helvetica, Arial,  Verdana, sans-serif;
+    font-size:9pt;
+    font-weight:normal;
+}
+
+#ApertaText
+{
+    position:relative;
+    left:10px;
+    font-size:50px;
+}
+
+
+
+#SignOnLogo{
+    height:52px;
+    float:left;
+}
+
+#SignOnLogoMain
+{
+    height:52px;
+    float:right;
+    top:5px;
+}
+
+
+#Logo
+{
+    position:absolute;
+    left:160px;
+    top:5px;
+    height:52px
+}
+
+#AppText
+{
+    position:absolute;
+    left:63px;
+    top:45px;
+    font-size:18px;
+    color:#56C5FF;
+}
+
+#AppSubText
+{
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size:25px;
+    /*margin-right:30px;*/
+    /*color:#56C5FF;*/
+}
+
+#AppMenuOptions
+{
+     position:absolute;
+    right:10px;
+    top:4px;
+    font-size:12px;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -3%; /* the bottom margin is the negative value of the footer's height */
+}
+
+.DivMain
+{
+   
+min-height: 80%;
+	height: auto !important;
+	height: 80%;
+}
+
+.DivHeader
+{
+    height:70px;
+    background-color: #666666;
+	color:#fff;
+}
+
+.DivHeaderSpacer
+{
+	 height:70px;
+	 display:block;
+}
+
+#ApertaMainFloor
+{
+    position:relative;
+	min-height: 80%;
+	height: auto !important;
+	height: 80%;
+	margin: 0 auto -5%;
+}
+
+
+.DivFooter, .push
+{
+	height: 5%; /* .push must be the same height as .footer */
+}
+
+
+
+#LeftDiv
+{
+	height: 80%;
+	width:300px;
+	margin:auto
+	
+}
+
+#RightDiv
+{
+	float: right;
+	background-color :none;
+	height: 80%;
+	width:45%;
+	font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+
+}
+
+#TimeOutDiv
+{
+	display:none;
+	position:absolute;
+	left:30%;
+	border: 2px double blue;
+	background-color: mintcream;
+	width:40%;
+	height: 164px;
+	margin-left :auto;
+	margin-right:auto;
+	font-size: 1.5em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+	z-index :999;
+
+}
+
+#TimeOutDivHeader
+{
+	background-color: blue;
+	color: white;
+	padding-left : 10px;
+	padding-top : 10px;
+}
+
+#SignOnDiv
+{
+	border-style :none;
+	height: 80%;
+	width:100%;
+	border-color : white;
+
+    padding:10px;
+}
+
+#ImagineDiv
+{
+	margin-left:10%;
+	margin-top:10%;
+}
+
+#ImageBox
+{
+	float: left;
+	height:40px;
+	width:40px;
+}
+
+#Heading
+{
+	font-size:30px;
+	margin-left :20px;
+	top:20%;
+	color:#1BA1E2;
+}
+
+.input {
+
+	padding: 10px 0px 10px 5px;
+    margin:10px 0px 0px 0px;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #9d9e9e;
+    background-color:#222222;
+
+	width:100%;
+
+	border-style :solid;
+    border-color:white;
+    border-width:2px;
+    box-sizing: content-box;
+}
+
+.button {
+	padding: 10px 0px 10px 5px;
+    margin:10px 0px 0px 0px;
+
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+    text-align:center;
+	background-color: #1ba1e2;
+
+	cursor: pointer;
+	width:100%;
+
+	border-style :solid;
+    border-color:white;
+    border-width:2px;
+
+    box-sizing: content-box;
+    opacity:0.8;
+}
+
+/* internet explorer only*/
+.dropdown::-ms-expand {
+    display: none;
+}
+
+/* IE specific hack to hide the blue highlighting after selecting from the dropdown*/
+select::-ms-value {background: transparent;color:#9d9e9e}
+
+
+
+/*.dropdown {
+	padding: 10px 0px 10px 5px;
+    margin:10px 0px 0px 0px;
+
+	font-weight: 300;
+	font-size: 18px;
+    text-align:center;
+    text-align-last:center; 
+
+	cursor: pointer;
+	width:100%;
+
+	border-style :solid;
+    border-color:white;
+    border-width:2px;
+
+    box-sizing: content-box;
+    opacity:0.8;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    appearance: none;
+
+}*/
+
+.dropdown {
+	padding: 10px 0px 10px 5px;
+    margin:10px 0px 0px 0px;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #9d9e9e;
+    background-color:#222222;
+
+	width:100%;
+
+	border-style :solid;
+    border-color:white;
+    border-width:2px;
+    box-sizing: content-box;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    appearance: none;
+    cursor:pointer;
+}
+
+
+.button:hover {
+    opacity:1.0;
+}
+
+.ApertaLabel
+{
+	padding: 10px 0px 10px 0px;
+    margin:10px 0px 0px 0px;
+
+	font-weight:bold;
+	font-size: 30px;
+	color: white;
+    text-align:center;
+	/*background-color: #1ba1e2;*/
+
+	width:100%;
+
+	border-style :none;
+    border-color:white;
+    border-width:2px;
+    box-sizing: content-box;
+}
+
+/* Change Password dialog ----------------------------------------------------------*/
+#ChangePasswordDialog
+{
+    display:none;
+}
+
+.hiddenDisplay{
+    display:none;
+}  
+
+.ChangePasswordErrorLabel {
+    color: orange;
+    width: 60%;
+    margin-top: 40%;
+}
+
+/*#OpText
+{
+    display:block;
+    font-size:15px;
+    text-align:right;
+    float:right;
+    margin-right:30px;
+    margin-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+}*/
+
+
+#LastLogIndiv {
+    color:white;
+    float:right;
+    padding:5px;
+}
+
+#DaysLeftdiv {
+    color:white;
+    float:right;
+    padding:5px;
+}
+
+#MenuItemUsers
+{
+    display:block;
+    font-size:15px;
+    text-align:right;
+    float:right;
+    margin-right:30px;
+    margin-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.Link {
+    float: left;
+    text-decoration: underline;
+    margin-top: 3%;
+    color :white;
+    cursor: pointer;
+
+}
+
+.Link:hover {
+   cursor:pointer;
+    text-decoration: underline;
+}
+
+#SiteText
+{
+    display:block;
+    font-size:15px;
+    text-align:right;
+    float:right;
+    margin-right:30px;
+    margin-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#OriginText
+{
+    font-size:15px;
+    text-align:right;
+    float:right;
+    margin-right:30px;
+    margin-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+}
+
+
+.LoginErrorLabel
+{
+	color: orange;
+	width: 60%;
+	margin-top:40%;
+}
+
+.RequiredFieldNameValidator
+{
+	color: red;
+}
+
+.RegularExpressionPassword
+{
+	color: red;
+}
+
+#SlideShow
+{
+	border-style :none;
+	border-color: none;
+	height: 60%;
+	width:95%;
+	margin-top:5%;
+}
+
+#ApertaImage
+{
+	margin-left: 30px;
+}
+
+.userDiv {
+	/*padding: 15px 25px;*/
+	margin-left :10%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	border-style :solid;
+	border-color :  lightgrey;
+	border-width :2px;
+	width:75%;
+	background-color :white;
+
+}
+
+#UserBox
+{
+	margin-top:10px;
+	margin-bottom:5%;
+}
+
+.UserImage
+{
+	float: left;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+}
+
+
+#slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+
+.DocArchExternal_FooterMessage
+{
+	float:left;
+	margin:0% 1%;
+	color:grey;
+}
+
+#CentreDiv
+{
+	position: absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	z-index:900;
+}
+
+#Grayee
+{
+	background-color:#222222;
+}
+
+.content
+{
+	   margin:auto; 
+}
+
+#holder {
+ position: absolute;
+ top: 300px;
+ left: 100px;   
+}
+
+.DivBoxGrid {
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 120px;
+    float:left;
+    margin:4px;
+    opacity:0.8;
+	border-radius: 10px;
+}
+
+.DivBoxGridOff {
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 120px;
+    float:left;
+    opacity:0.7;
+	border-radius: 10px;
+}
+
+.DivEnabled
+{
+	cursor:pointer;
+    opacity:0.5;
+    border-style:solid;
+    border-width:2px;
+    border-color:transparent;
+    width:100%;
+    height:100%;
+    transition:all 1.0s ease;
+}
+
+
+.DivEnabled:hover
+{
+	opacity:1.0;
+    z-index:99999;
+    border-color:white;
+}
+
+.DivDisabled
+{
+	cursor: not-allowed;
+}
+
+
+#dropDivTRACK {
+    background-image: url(../Images/CaptureLogo.png);
+}
+
+#dropDivSUPERVISOR {
+    background-image: url(../Images/SuperLogo.ico);
+   
+}
+
+#dropDivDCB{
+background-image:url(../Images/DCBLogo.png) ;
+}
+
+.AppDivBlock{
+    background-repeat: no-repeat;
+    background-position:left;
+    background-position-x:10px;
+    display: block;
+    position: absolute;
+    width: 248px;
+    height: 118px;
+    text-align: right;
+    color: white;
+    vertical-align:bottom;
+    background-size: 40%;
+	border-radius: 10px;
+}
+
+
+#dropDivBATCHSELECTION2Small {
+ background: #60A917;
+background-image:url(../Images/BalancerLogo.ico) ;
+background-repeat:no-repeat;
+background-position:center; 
+ display: block;
+float:right;
+ top:30px;
+ text-align:right;
+ color:white;
+	vertical-align: bottom;
+	background-size: 60%
+}
+
+
+
+
+#dropDivSupervisorSmall {
+background: #008A00;
+background-image:url(../Images/Super1.png) ;
+background-repeat:no-repeat;
+background-position:center; 
+ display: block;
+float:left;
+ top:30px;
+ text-align:right;
+ color:white;
+	vertical-align: bottom;
+	background-size: 60%
+}
+
+#dropDivAuditSmall
+{
+ background: #00ABA9;
+background-image:url(../Images/Audit2.png) ;
+background-repeat:no-repeat;
+background-position:center; 
+ display: block;
+float:left;
+ top:30px;
+ text-align:right;
+ color:white;
+	vertical-align: bottom;
+	background-size: 60%
+}
+
+
+/** New Style **/
+.products span{
+    position: absolute;
+    /*bottom: 40px;*/
+    top:30px;
+    left: 95px;
+    padding: 10px;    
+	text-align:right;
+	width:50%;
+	font-size:16px;
+}
+	
+
+
+
+
+#dropDivApertaWS {
+background-image:url(../Images/SuperLogo.png) ;
+}
+
+
+#dropDivApertaWOE {
+background-image:url(../Images/OnlineEnquiry.png) ;
+}
+
+#dropDivApertaWSEFT {
+background-image:url(../Images/SuperLogo.png) ;
+}
+
+
+#dropDivApertaWOEEFT {
+background-image:url(../Images/OnlineEnquiry.png) ;
+}
+
+
+
+#dropDivApertaDA {
+background-image:url(../Images/Enquiry.png) ;
+}
+
+
+#dropDivApertaEFT {
+background-image:url(../Images/EFT.png) ;
+}
+
+#dropDivApertaWR {
+  
+background-image:url(../Images/WebReview.png) ;
+}
+
+#dropDivApertaWSS {
+  
+background-image:url(../Images/Suspense.png) ;
+}
+
+#dropDivapertaSVWT {
+
+background-image:url(../Images/Signature.png) ;
+
+}
+
+#dropDivApertaWC {
+    background-image: url(../Images/CaptureLogo.png);
+}
+
+
+#dropDivApertaWDCB{
+background-image:url(../Images/DCBLogo.png) ;
+}
+
+
+#Settings
+{
+	height:100%;
+	background-image:url(../images/gear.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size: 75%;
+	width:37px;
+	float:right;
+	display:block;
+
+
+}
+
+/*#UserDisplay
+{
+	height: 100%;
+	width:15%;
+	float:right;
+	display:block;
+	display: table-cell;
+	vertical-align: bottom;
+}*/
+
+#DivCapture2 {
+ display: block;
+ position: absolute;
+ background: #ccc; 
+ top:200px;
+ left:-10px;
+}
+
+div.DivPadLock
+{
+	background-image:url(../Images/PadlockTrans.png);
+
+	display: block;
+	z-index :900;
+	position:absolute;
+	margin-left: auto;
+    margin-right: auto;
+	width:100%;
+}
+
+
+.DivAppTRACKImageDisabled{background-image:url(../Images/Capture1.png);
+						  background-color:pink;
+}
+.DivAppTRACKImage{background-image:url(../Images/Capture.png);}
+
+
+div.DIVApertaApp
+{
+    text-align:right;
+	height:200px;
+	width:200px;
+    margin:10px;
+	color:white;
+
+}
+
+
+div.DIVApertaAppSmall
+{
+    text-align:right;
+	height:80px;
+	width:80px;
+    margin:10px;
+	color:white;
+}
+
+/*#Logo
+{
+    position:relative;
+    left:10px;
+    font-size:50px;
+    color:#56C5FF;
+	width: 54px;
+}*/
+
+#UserMenu
+{
+	border-style:solid;
+	border-width:2px;
+	border-color:#1BA1E2;
+	width:190px;
+	background-color:white;
+	display:none;
+	font-size:16px;
+}
+
+#UserOptions
+{
+	border-style:solid;
+	border-width:2px;
+	border-color:#1BA1E2;
+	width:130px;
+	background-color:white;
+	display:none;
+	font-size:16px;
+	color:black;
+}
+
+#OpIcon
+{
+	height:100%;
+	float:right;
+	/*margin:5px*/
+}
+
+#LogOff
+{
+    font-size:15px;
+    text-align:right;
+    float:right;
+    /*margin-right:30px;*/
+    margin-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+}
+#LogOff:hover
+{
+    background-color:#999999;
+    border-radius:10px;
+}
+
+
+.blur
+{
+	opacity :0.4;
+	filter:alpha(opacity=40);
+	background-color :lightgray;
+}
+
+div.DIVApertaAppHelp
+{
+    position:absolute;
+    bottom:0px;
+    height:40px;
+    width:97%;
+    display:none;
+	/*opacity :0.6;*/
+	background:rgba(255,255,255,0.8);
+	color:black;
+	text-align:left;
+	padding-left:10px;
+	
+}
+
+div.DIVApertaAppHelp p
+{
+    font-size:11px;
+}
+
+.Padlock
+{
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(Images/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style:none ;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(Images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+	#slides {
+      display: none
+    }
+
+    .SlideShow {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .SlideShow {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .SlideShow {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .SlideShow {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .SlideShow {
+        width: 1170px
+      }
+    }
+      .DivHeaderSpacer
+      {
+          height: 49px;
+      }
+
